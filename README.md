@@ -1,8 +1,8 @@
 # Cryptotp2
+# Sriven TAMILALAGAN CSM4
 # TP2 crypto efrei
 # Voici le code du César du TP2
 
-# ...existing code...
 
 def chiffrer_cesar(texte, decalage):
     resultat = ""
@@ -17,7 +17,7 @@ def chiffrer_cesar(texte, decalage):
 def dechiffrer_cesar(texte, decalage):
     return chiffrer_cesar(texte, -decalage)
 
-# Interaction avec l'utilisateur
+
 texte = input("Tape le texte à coder ou décoder : ")
 try:
     decalage = int(input("Donne la clé (un nombre entier) : "))
@@ -25,7 +25,6 @@ except ValueError:
     print("Il faut entrer un nombre entier pour la clé.")
     exit()
 
-# Menu pour choisir chiffrer ou déchiffrer
 choix = input("Tu veux coder ou décoder ? (c/d) : ").lower()
 
 if choix == 'c':
@@ -36,7 +35,6 @@ elif choix == 'd':
     print("Résultat décodé :", texte_dechiffre)
 else:
     print("Je n'ai pas compris. Mets 'c' pour coder ou 'd' pour décoder.")
-# ...existing code...
 
 # TP2 crypto efrei _____________________________________________________________________________________________________________________________________________
 # Voici le code du Vigenere du TP2
@@ -69,8 +67,6 @@ def dechiffrer_vigenere(texte, cle):
             resultat += char
     return resultat
 
-# ...existing code...
-# ...existing code...
 
 choix = input("Tu veux chiffrer ou déchiffrer ? (c/d) : ").lower()
 
@@ -84,4 +80,4 @@ elif choix == 'd':
     print("Texte déchiffré :", dechiffrer_vigenere(texte, cle))
 else:
     print("Choix non reconnu. Tape 'c' pour chiffrer ou 'd' pour déchiffrer.")
-# ...existing code...
+
